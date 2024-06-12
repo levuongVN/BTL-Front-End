@@ -1,0 +1,81 @@
+#Prd{
+    width: 100%;
+    display: flex;
+}
+#Prd > :nth-child(1){
+    width: 100%;
+}
+#Prd > div > img{
+    width: 100%;
+}
+#Prd > :nth-child(2){
+    text-align: center;
+    width: 100%;
+}
+#Prd > :nth-child(2)> p{
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#Prd > :nth-child(2)> div > i{
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+#black{
+    background-color: rgb(48, 47, 47);
+    width:40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 4px solid rgb(190, 189, 189);
+    cursor: pointer;
+}
+#white{
+    background-color: rgb(211, 206, 206);
+    width:40px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#BuyPRD,#ConfirmVote, #cancelVote{
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: larger;
+    border-radius: 50px;
+    transition: ease-in-out 0.3s;
+}
+#BuyPRD:hover, #ConfirmVote:hover,#cancelVote:hover{
+    animation-name: Bgr_Btn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    color: rgb(48, 47, 47);
+}
+@keyframes Bgr_Btn{
+    from{
+        background-color:#a8c0ff;
+        background-position: left center;
+    }
+    to{
+        background-color:#FFFDE4;
+        background-position: right center;
+    }
+}
+
+#ipTen, #ipadd,#ipsdt,textarea{
+    width: 50%;
+    margin: 1%;
+}
+#sdt{
+    margin-left: 3%;
+}
+#add{
+    margin-left: -3.5%;
+}
+textarea{
+    margin-left: 13%;
+}

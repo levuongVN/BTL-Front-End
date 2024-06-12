@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="BTL LeVanVuong.css" />
+  </head>
+  <body id="Body1">
+    <!--For navbar-->
+    <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div id="navBar1" class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><i class="fa-solid fa-computer" id="iconOfNav"></i> Best for
+          <i class="fa-brands fa-apple"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ProductionsMobile">Phụ kiện DT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Phụ kiện khác
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#iMacPrduct">Imac</a></li>
+                <li><a class="dropdown-item" href="#MacBookProduct">Macbook</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#Xbox">Tay cầm chơi game</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <i class="fa-solid fa-cart-shopping" id="iconShopNav"></i>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="searchValue"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <div id="IdeaSearch"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!--For slide-->
+    <div
+      id="carouselExampleControlsNoTouching"
+      class="carousel slide"
+      data-bs-touch="false"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://newtechshop.vn/wp-content/uploads/2023/12/2292-x-990-px-1024x442.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://newtechshop.vn/wp-content/uploads/2023/11/1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://newtechshop.vn/wp-content/uploads/2024/02/homepage.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Upto Nav-->
+    <a class="upToNav" href="#"><i class="fa-solid fa-circle-up"></i></a>
+
+    <!--Light mode and dark mode-->
+    <div id="ClickToChangeTheme">
+      <button id="SW-Theme">
+        <i class="fa-solid fa-star-and-crescent" style="color: white"></i>
+      </button>
+    </div>
+
+    <!--For productions-->
+    <div id="Productions" class="Productions">
+      <div class="gr1Prd">
+        <div class="FirstProduct" id="FirstProduct">
+          <img
+            id="anhSP1_gr1"
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MMMQ3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1645138486301"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Magic Mouse</h5>
+          </div>
+          <div class="Price">
+            <i>3.299.000 ₫</i>
+          </div>
+          <div class="ColorsProduct">
+            <p id="black" class="black"></p>
+            <p id="white" class="white"></p>
+          </div>
+          <button id="BuyFirstProduct1" class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="SecondProduct" id="SecondProduct">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MTJV3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1694014871985"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>AirPods Pro</h5>
+          </div>
+          <div class="Price">
+            <i>6.199.000 ₫</i>
+          </div>
+          <button id="BuySecondProduct1" class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="ThirdProduct" id="ThirdProduct">
+          <img
+            id="img_OF_MacbookPro14"
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830200"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>MacBook Pro 14" M3</h5>
+          </div>
+          <div class="Price">
+            <i>39.999.000 ₫</i>
+          </div>
+          <div class="ColorsProduct">
+            <p class="black" id="black_OF_Mac"></p>
+            <p class="silver" id="silver_OF_Mac"></p>
+          </div>
+          <button id="BuyThirdProduct1" class="BuyProduct">BUY NOW!</button>
+        </div>
+      </div>
+
+      <div class="gr2Prd">
+        <div class="FirstProduct" id="FirstProductgr2">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Ốp điện thoại IP 15 PRO</h5>
+          </div>
+          <div class="Price">
+            <i>890.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="SecondProduct" id="SecondProductgr2">
+          <img
+            id="img_OF_XboxOne"
+            src="https://thereal.buydig.com/get_pimage100.phtml?source=1&typeid=650174&sku=MSQAT00001"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Tay cầm XBOX ONE</h5>
+          </div>
+          <div class="Price">
+            <i>1.250.000 ₫</i>
+          </div>
+          <div class="ColorsProduct">
+            <p class="black" id="black_OF_Xbox"></p>
+            <p class="red" id="red_OF_Xbox"></p>
+            <p class="blue" id="blue_OF_Xbox"></p>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="ThirdProduct" id="ThirdProductgr2">
+          <img
+            id="img_OF_Imac"
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-no-id-blue-selection-hero-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1701459101618"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>iMac 2023 24" Retina 4.5K Apple M3</h5>
+          </div>
+          <div class="Price">
+            <i>36.999.000 ₫</i>
+          </div>
+          <div class="ColorsProduct">
+            <p class="ocean" id="ocean_OF_Imac"></p>
+            <p class="green" id="green_OF_Imac"></p>
+            <p class="pink" id="pink_OF_Imac"></p>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+      </div>
+
+      <div class="gr3Prd">
+        <div class="FirstProduct" id="FirstProductgr3">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/HPL72?wid=400&hei=400&fmt=jpeg&qlt=95&.v=1619028438000"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>
+              Đế Sạc Không Dây 2 trong 1 Belkin BOOST↑CHARGE™ PRO với MagSafe
+            </h5>
+          </div>
+          <div class="Price">
+            <i>2.949.000đ ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="SecondProduct" id="SecondProductgr3">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MY1W2_GEO_VN?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1680742496862"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Bộ Tiếp Hợp Nguồn USB-C 30W</h5>
+          </div>
+          <div class="Price">
+            <i>859.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="ThirdProduct" id="ThirdProductgr3">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Bộ Sạc MagSafe</h5>
+          </div>
+          <div class="Price">
+            <i>1.199.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+      </div>
+    </div>
+
+    <!--for mobile-->
+    <div id="ProductionsMobile" style="text-align: center; margin-top: 2%">
+      <h3 style="border-top: 1px solid gray; margin-left: -5%">Mobile Tool</h3>
+      <div class="gr1PrdMB">
+        <div class="FirstProduct" id="FirstProductgr1MB">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/HPL72?wid=400&hei=400&fmt=jpeg&qlt=95&.v=1619028438000"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>
+              Đế Sạc Không Dây 2 trong 1 Belkin BOOST↑CHARGE™ PRO với MagSafe
+            </h5>
+          </div>
+          <div class="Price">
+            <i>2.949.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="SecondProduct" id="SecondProductgr1MB">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Ốp điện thoại IP 15 PRO</h5>
+          </div>
+          <div class="Price">
+            <i>890.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="ThirdProduct" id="ThirdProductgr1MB">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MHXH3?wid=532&hei=582&fmt=png-alpha&.v=1661269793559"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Bộ Sạc MagSafe</h5>
+          </div>
+          <div class="Price">
+            <i>1.199.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+      </div>
+
+      <div class="gr2PrdMB">
+        <div class="FirstProduct" id="FirstProductgr2MB">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airtag-single-select-202104?wid=532&hei=582&fmt=png-alpha&.v=1617761671000"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>AirTag</h5>
+          </div>
+          <div class="Price">
+            <i>800.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="SecondProduct" id="SecondProductgr2MB">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MT2M3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1699644802878"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Móc Khóa Vải Tinh Dệt AirTag</h5>
+            <div class="ColorsProductMB">
+              <p id="blackMb2" class="blackMb2"></p>
+              <p id="oceanMB2" class="oceanMb2"></p>
+              <p id="coralMB2" class="coralMb2"></p>
+            </div>
+          </div>
+          <div class="Price">
+            <i>1.090.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="ThirdProduct" id="ThirdProductgr2Mb">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MU2G3?wid=532&hei=582&fmt=png-alpha&.v=1693236163178"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Cáp Sạc USB-C 240W (2 m)</h5>
+          </div>
+          <div class="Price">
+            <i>819.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+      </div>
+
+      <div class="gr3PrdMB">
+        <div class="FirstProduct" id="FirstProductgr3MB">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MUQX3?wid=532&hei=582&fmt=png-alpha&.v=1692831819729"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Bộ Tiếp Hợp USB-C sang Lightning</h5>
+          </div>
+          <div class="Price">
+            <i>939.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="SecondProduct" id="SecondProductgr3MB">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MM0A3?wid=532&hei=582&fmt=png-alpha&.v=1632956386000"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Cáp USB-C sang Lightning (1m)</h5>
+            <!-- <div class="ColorsProductMB">
+          <p id="blackMb3" class="blackMb3"></p>
+          <p id="oceanMB3" class="oceanMb3"></p>
+          <p id="coralMB3" class="coralMb3"></p>
+        </div>-->
+          </div>
+          <div class="Price">
+            <i>539.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+        <div class="ThirdProduct" id="ThirdProductgr3Mb">
+          <img
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MNWP3_GEO_VN?wid=532&hei=582&fmt=png-alpha&.v=1681795030532"
+            alt=""
+          />
+          <div class="NameProduct">
+            <h5>Bộ Tiếp Hợp Nguồn USB-C Kép 35W Nhỏ Gọn</h5>
+          </div>
+          <div class="Price">
+            <i>1.359.000 ₫</i>
+          </div>
+          <button class="BuyProduct">BUY NOW!</button>
+        </div>
+      </div>
+    </div>
+
+    <!--For Imac-->
+    <div id="iMacPrduct">
+      <div id="ProductionsImac">
+        <img
+          src="https://www.apple.com/v/imac/p/images/overview/hero_endframe__fpycn08d62ai_large_2x.jpg"
+          alt=""
+        />
+        <h2 id="titChooseColor">Bảy màu rực rỡ.</h2>
+        <div id="chooseColoriMac">
+          <h2 id="">Bạn hãy chọn</h2>
+          <ul id="TextColoriMac">
+            <li id="ListTextColor1"><h2>Ocean</h2></li>
+            <li id="ListTextColor2"><h2>Xanh</h2></li>
+            <li id="ListTextColor3"><h2>Hồng</h2></li>
+            <li id="ListTextColor4"><h2>Vàng</h2></li>
+            <li id="ListTextColor5"><h2>Màu</h2></li>
+          </ul>
+        </div>
+      </div>
+      <video
+        src="https://www.apple.com/105/media/us/imac/2023/4e499881-f23c-4108-bcce-5dff3399bebe/anim/colors-hero/medium_2x.mp4"
+        autoplay
+        loop
+        muted
+        width="100%"
+      ></video>
+
+      <div id="chooseColor">
+        <div id="FormoreImac">
+          <ul id="CheckColorImac">
+            <li>
+              <p id="circleGreen"></p>
+              <i id="Greenimac">Xanh </i>
+            </li>
+            <li>
+              <p id="circleOcean"></p>
+              <i id="OceaniMac">Xanh Dương</i>
+            </li>
+            <li>
+              <p id="circlePink"></p>
+              <i id="PinkiMac">Hồng</i>
+            </li>
+            <li>
+              <p id="circleGold"></p>
+              <i id="GoldiMac">Vàng</i>
+            </li>
+          </ul>
+          <img
+            id="imgImac1"
+            width="20%"
+            height="80%"
+            src="https://www.apple.com/v/imac/p/images/overview/color_side_green__bjxhwofb06b6_large_2x.jpg"
+            alt=""
+          />
+        </div>
+        <div id="moreVisualColor">
+          <img
+            id="imgImac2"
+            width="100%"
+            src="https://www.apple.com/v/imac/p/images/overview/color_front_green__eb8qbnemmre6_large_2x.jpg"
+            alt=""
+          />
+          <br />
+          <img
+            id="imgImac3"
+            width="100%"
+            src="https://www.apple.com/v/imac/p/images/overview/color_back_green__buxxfjccqjzm_large_2x.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--forMacbook-->
+
+    <div id="MacBookProduct">
+      <div id="TitleMacbook">
+        <h1>Mac</h1>
+        <h2>Bạn nghĩ được <br />là Mac làm được.</h2>
+      </div>
+      <video
+        id="videoOfMac"
+        autoplay
+        loop
+        src="https://www.apple.com/105/media/us/mac/family/2024/60fc0159-4236-4a03-8534-f5ba07e538c5/anim/welcome/large_2x.mp4"
+      ></video>
+
+      <div id="ProductMac">
+        <div id="MacBookDetail">
+          <img id="imgMac_Detail" width="30%" src="Mac1.png" alt="" />
+          <h2 id="textMacDetail1">Chip M3-GPU 8 lõi, SSD 256GB</h2>
+          <p id="textMacDetail2">
+            Màn hình có đèn nền LED 13,6 inch (theo đường chéo) với công nghệ
+            IPS;1 độ phân giải gốc 2560x1664 với mật độ 224 pixel mỗi inch
+          </p>
+          <div id="DetailRecharge">
+            <h3 id="RechargeText">Sạc Và Kết Nối</h3>
+            <img
+              id="imgMac_Detail1"
+              width="35%"
+              src="https://www.apple.com/v/macbook-air/s/images/specs/13-inch/mba_13_charging1__e1vqm2bw9fsm_large_2x.jpg"
+              alt=""
+            />
+            <p id="MagText">MagSafe 3</p>
+            <p id="Thunderbolt">Thunderbolt / USB 4</p>
+          </div>
+
+          <div id="DetailRecharge1">
+            <img
+              class="imgMac_Detail2"
+              width="30%"
+              src="https://www.apple.com/v/macbook-air/s/images/specs/13-inch/mba_13_charging2__xmwlprpjwzmy_large_2x.jpg"
+              alt=""
+            />
+            <p class="TextDetailMac">Jack cắm tai nghe 3,5 mm</p>
+          </div>
+        </div>
+        <div id="MacBookDetail1">
+          <img
+            id="img_Mac"
+            width="30%"
+            src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-macbook-air-gold-m1-202010?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1634145607000"
+            alt=""
+          />
+          <div id="ColorsMac" style="width: 10%">
+            <img
+              id="ColorsMac1"
+              width="100%"
+              style="cursor: pointer"
+              src="MacbookAir.png"
+              alt=""
+            />
+            <img
+              id="ColorsMac2"
+              width="100%"
+              style="cursor: pointer"
+              src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-macbook-air-m2-midnight-202208?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1659114484307"
+              alt=""
+            />
+          </div>
+          <h3>MacBook Air 13” và 15”</h3>
+          <h4>Chip M2 hoặc M3</h4>
+          <p>
+            Chip Apple <b> M2</b> CPU 8 lõi với 4 lõi hiệu năng và 4 lõi tiết
+            kiệm điện GPU 8 lõi hoặc 10 lõi
+          </p>
+          <p>
+            Chip Apple <b>M3</b> CPU 8 lõi với 4 lõi hiệu năng và 4 lõi tiết
+            kiệm điện GPU 8 lõi Công nghệ dò tia tốc độ cao bằng phần cứng
+          </p>
+          <p>
+            Siêu mỏng, siêu nhanh để làm việc, giải trí và sáng tạo bất cứ đâu.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--For Console Xbox-->
+    <div id="Xbox">
+      <div class="FirstNewsXbox">
+        <h1>XBOX CONSOLES </h1>
+        <p id="EffectXbox1"></p>
+          <a id="LINKtoShop" href="https://www.xbox.com/consoles/all-consoles#shop">SHOP CONSOLES</a> <i id="fa-solid" class="fa-solid fa-chevron-right"></i>
+          <div class="row">
+            <div class="col">
+              <img width="100%" src="https://assets.xboxservices.com/assets/a3/a1/a3a19061-f627-4a06-8be9-76141fb77972.png?n=Console-Hub_Content-Placement-0_SeriesX_1146x860.png" alt="">
+              <h1 style="color: white;">XBOX SERIES X</h1>
+              <h3 style="color: white;">The fastest, most powerful Xbox ever.</h3>
+              <div class="row">
+                <div class="col">
+                  <a id="LINKtoShop" class="LINKtoShop" href="https://www.xbox.com/consoles/all-consoles#shop">SHOP NOW </a> <i id="fa-solid" class="fa-solid fa-chevron-right"></i>
+                  <a id="LINKtoShop" class="LINKtoShop2" href="https://www.xbox.com/consoles/xbox-series-x">LEARN MORE </a> <i id="fa-solid" class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <img width="100%" src="https://assets.xboxservices.com/assets/19/5a/195aa638-fd92-4584-9585-53c6dbc204ba.png?n=Console-Hub_Content-Placement-0_SeriesS-Duo_1146x860.png" alt="">
+              <h1 style="color: white;">XBOX SERIES S</h1>
+              <h3 style="color: white;">The best value in gaming.</h3>
+              <div class="row">
+                <div class="col">
+                  <a id="LINKtoShop" class="LINKtoShop" href="https://www.xbox.com/consoles/all-consoles#shop">SHOP NOW </a> <i id="fa-solid" class="fa-solid fa-chevron-right"></i>
+                  <a id="LINKtoShop" class="LINKtoShop2" href="https://www.xbox.com/consoles/xbox-series-s">LEARN MORE </a> <i id="fa-solid" class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--GridProductXbox-->
+      <div>
+        <div class="row">
+          <div class="col-sm">
+            <img
+              width="100%"
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSX-CP-Xbox-Series-X?wid=517&hei=291&fit=crop"
+              alt=""
+            />
+            <h4>Xbox Series X</h4>
+            <p>
+              All games look and play best on Xbox Series X—the fastest, most
+              powerful Xbox ever. Plus, you get:
+            </p>
+            <ul>
+              <li>
+                Lightning-fast load times powered by the Xbox Velocity
+                Architecture
+              </li>
+              <li>12 teraflops of power</li>
+              <li>True 4K gaming and 8K ready</li>
+              <li>Next-gen frame rates up to 120 FPS</li>
+            </ul>
+            <a href="https://www.microsoft.com/en-us/d/xbox-series-x/8wj714n3rbtl?icid=XboxConsolesCat_R1_CC1_XSX&exid=true&activetab=pivot:overviewtab" class="btn btn-success">Shop Xbox Series X</a>
+          </div>
+          <div class="col-md">
+            <img
+              width="100%"
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSS-CP-Xbox-Series-S?wid=517&hei=291&fit=crop"
+              alt=""
+            />
+            <h4>Xbox Series S</h4>
+            <p>Next-gen performance in the smallest Xbox ever:</p>
+            <ul>
+              <li>All-digital gaming experience</li>
+              <li>Custom NVME SSD powered by Xbox Velocity Architecture</li>
+              <li>Next-gen frame rates up to 120FPS</li>
+            </ul>
+            <a href="https://www.microsoft.com/en-us/d/xbox-series-s/942j774tp9jn?icid=XboxConsolesCat_R1_CC2_XboxSeriesS&exid=true" class="btn btn-success">Shop Xbox Series X</a>
+          </div>
+          <div class="col-lg">
+            <img
+              width="100%"
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Xbox-Series-S-1TB-Black-Merch-01?wid=517&hei=291&fit=crop"
+              alt=""
+            />
+            <h4>Xbox Series S - 1TB</h4>
+            <p>
+              Experience next-gen speed and performance at a great price with
+              Xbox Series S – 1TB (Carbon Black). Plus, get:
+            </p>
+            <ul>
+              <li>An all-digital gaming experience</li>
+              <li>
+                1 TB custom NVME SSD powered by Xbox Velocity Architecture
+              </li>
+              <li>Next-gen frame rates up to 120 FPS</li>
+              <li>1440p gaming resolution</li>
+            </ul>
+            <a href="https://www.microsoft.com/en-us/d/Xbox-Series-S-1TB-black/8zcbgtt29h9c?icid=XboxConsolesCat_R1_CC3_Darvaza&exid=true" class="btn btn-success">Shop Xbox Series X</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Scroll to top-->
+    <div id="scroll_MyShop">
+      <h1 id="title_scrollShop">Chính hãng - Uy tín - Bảo đảm</h1>
+      <div id="ChinhHang">
+        <div id="FirstText">
+          <h5 id="text1_ChinhHang">
+            Chúng tôi cam đoan 100% hàng đều được vận chuyển từ Apple,
+            Microsoft!
+          </h5>
+          <h5 id="text3_ChinhHang">Luôn đặt người tiêu dùng lên hàng đầu!</h5>
+          <h5 id="text5_ChinhHang">
+            <i class="fa-solid fa-truck-fast"></i> Nói không với delay vận
+            chuyển đơn hàng!
+          </h5>
+          <h5 id="text7_ChinhHang">
+            Thank you for Take Care to My Shop
+            <i style="color: pink" class="fa-solid fa-heart"></i>
+          </h5>
+        </div>
+        <p id="Line"></p>
+        <div id="FirstText">
+          <h5 id="text2_ChinhHang">Đã có mặt tại thị trường tới 5 năm!</h5>
+          <h5 id="text4_ChinhHang">Hệ thống chăm sóc khách hàng 24/7!</h5>
+          <h5 id="text6_ChinhHang">
+            <i class="fa-solid fa-face-smile"></i> Chúng tôi luôn ghi nhận mọi
+            trường hợp hàng có vấn đề hay chất lượng.Mọi đóng góp vui lòng liện
+            hệ với chúng tôi tại contact form!
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="">
+      <div id="chanTrang">
+        <div id="FormContact">
+          <h1 id="titleContact">Contact here!</h1>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3" id="FormContact1">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Messenger</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            id="Submitcontact"
+            class="btn btn-outline-success"
+          >
+            Success
+          </button>
+        </div>
+        <div id="Detail_Me">
+          <div id="Detail_Me_Child">
+            <div id="ListSocial">
+              <ul id="Social">
+                <li>
+                  <a
+                    id="FB"
+                    href="https://www.facebook.com/profile.php?id=100039912203425&locale=vi_VN"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a id="IG" href="https://www.instagram.com/levuong111/"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a id="GIT" href="https://github.com/levuongVN"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+              <ul id="AboutMe">
+                <li><a href="">My Project </a></li>
+                <li><a href="">My Team </a></li>
+                <li><a href="">Privacy policy </a></li>
+              </ul>
+            </div>
+            <div id="Text_Formy">
+              <h3>VTECH</h3>
+              <p>
+                Trang web shoping online chất lượng và uy tín. Luôn mang đến sự
+                tin tưởng và hài lòng cho người tiêu dùng!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="BTLLeVanVuong.js"></script>
+  </body>
+</html>
